@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    color: white;
+    font-size: 100px;
+    font-weight: 400;
+}
+
+h3 {
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 40px;
+}
+
+body {
+    background: #093545;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    
+    
+}
+
+#email {
+    border-radius: 10px;
+    border: none;
+
+    padding: 40px;
+    padding-left: 60px;
+    color: white;
+    background: #224957;
+
+    margin-top: 50px;
+    height: 40px;
+    width: 600px;
+
+    font-size: 22px;
+
+    background-image: url(assets/email.svg);
+    background-repeat: no-repeat;
+    background-position: 15px 24px;
+    background-size: 30px;
+}
+
+
+
+
+#password {
+    border-radius: 10px;
+    border: none;
+
+    padding: 40px;
+    padding-left: 60px;
+    background: #224957;
+    color: white;
+    
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 65px;
+    
+    height: 40px;
+    width: 600px;
+    
+    font-size: 22px;
+
+    background-image: url(assets/lock.svg);
+    background-repeat: no-repeat;
+    background-position: 16px 24px;
+    background-size: 30px;
+}
+
+
+
+
+#view {
+    width: 40px;
+    margin-left: 20px;
+    cursor: pointer;
+    margin-bottom: -17px;
+    
+}
+
+form input::-webkit-input-placeholder{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 300;
+    background: local;
+}
+
+textarea:focus, input:focus, select:focus {
+    outline: 0;
+}
+
+
+#button {
+    background: #20DF7F;
+    padding: 20px;
+    width: 600px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 50px;
+    color: white;
+    font-weight: 400;
+    font-size: 25px;
+    cursor: pointer;
+    box-shadow: 0px 4px 5px #000000;
+    margin-bottom: 60px;
+
+}
+
+label  {
+    color: #093545;
+    font-weight: 400;
+}
+
+.forgot{
+    color: #20DF7F;
+    font-weight: 400;
+    margin-left: 400px;
+    margin-top: -33px;
+    margin-bottom: 30px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* checkbox */
+
+.custom-checkbox input{
+    display: none;
+
+}
+  
+.custom-checkbox input + label:before {
+    content: '';
+    width: 25px;
+    height: 25px;
+    border-radius: 4px;
+    background-color: #224957;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 3px;
+    cursor: pointer;
+
+  }
+  
+.custom-checkbox input:checked + label:before {
+    background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
+    background-position: center;
+    border: none;
+    padding: 0.5px;
+  }
+
+.custom-checkbox label {
+    margin-right: 390px;
+    cursor: pointer;
+    font-size: 22px;
+    color: white;
+}
+
+/* wave blue*/
+
+.custom-shape-divider-bottom-1622264110 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 10;
+}
+
+.custom-shape-divider-bottom-1622264110 svg {
+    position: relative;
+    display: block;
+    width: calc(123% + 1.3px);
+    height: 100px;
+}
+
+.custom-shape-divider-bottom-1622264110 .shape-fill {
+    fill: #224957;
+    opacity: 80%;
+}
+
+/*wave green*/
+
+.custom-shape-divider-bottom-1622264216 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1622264216 svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1622264216 .shape-fill {
+    fill: #20DF7F;
+    opacity: 20%;
+}
