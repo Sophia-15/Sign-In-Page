@@ -7,15 +7,19 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 h1 {
     color: white;
-    font-size: 100px;
+    font-size: 10rem;
     font-weight: 400;
 }
 
 h3 {
     color: white;
-    font-size: 25px;
+    font-size: 2.5rem;
     font-weight: 400;
     margin-top: 40px;
 }
@@ -23,7 +27,6 @@ h3 {
 body {
     background: #093545;
     height: 100vh;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,15 +63,14 @@ form {
     height: 40px;
     width: 600px;
 
-    font-size: 22px;
+
+    font-size: 2.2rem;
 
     background-image: url(assets/email.svg);
     background-repeat: no-repeat;
     background-position: 15px 24px;
     background-size: 30px;
 }
-
-
 
 
 #password {
@@ -86,8 +88,9 @@ form {
     
     height: 40px;
     width: 600px;
-    
-    font-size: 22px;
+
+
+    font-size: 2.2rem;
 
     background-image: url(assets/lock.svg);
     background-repeat: no-repeat;
@@ -127,7 +130,7 @@ textarea:focus, input:focus, select:focus {
     margin-top: 50px;
     color: white;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 2.5rem;
     cursor: pointer;
     box-shadow: 0px 4px 5px #000000;
     margin-bottom: 60px;
@@ -145,7 +148,7 @@ label  {
     margin-left: 400px;
     margin-top: -33px;
     margin-bottom: 30px;
-    font-size: 22px;
+    font-size: 2.2rem;
     cursor: pointer;
 }
 
@@ -180,7 +183,7 @@ label  {
 .custom-checkbox label {
     margin-right: 390px;
     cursor: pointer;
-    font-size: 22px;
+    font-size: 2.2rem;
     color: white;
 }
 
@@ -229,4 +232,181 @@ label  {
 .custom-shape-divider-bottom-1622264216 .shape-fill {
     fill: #20DF7F;
     opacity: 20%;
+}
+
+/* media queries */
+
+@media (max-width: 1440px) {
+    html{
+        font-size: 40%;
+    }
+
+    
+
+    #email {
+        width: 400px;
+        padding: 30px;
+        padding-left: 40px;
+
+        font-size: 13px;
+
+        background-position: 15px 19px;
+        background-size: 20px;
+    }
+
+    form {
+        align-items: center;
+    }
+
+    #password {
+        width: 400px;
+        padding: 30px;
+        padding-left: 40px;
+
+        margin-left: 60px;
+
+        font-size: 13px;
+
+        background-position: 15px 19px;
+        background-size: 20px;
+    }
+
+    #view {
+        width: 30px;
+        margin-bottom: -11px;
+    }
+
+    #button {
+        width: 400px;
+        font-size: 13px;
+    }
+
+    .custom-checkbox label {
+        margin-right: 230px;
+        font-size: 2.5rem;
+    }
+
+    .forgot{
+        margin-left: 255px;
+        margin-top: -30px;
+        margin-bottom: 30px;
+        font-size: 2.5rem;
+        cursor: pointer;
+    }
+
+}
+
+@media (max-width: 768px) {
+    html{
+        font-size: 30%;
+    }
+
+    #email {
+        width: 300px;
+        padding: 30px;
+        padding-left: 40px;
+
+        font-size: 13px;
+
+        background-position: 15px 19px;
+        background-size: 20px;
+    }
+
+    #password {
+        width: 300px;
+        padding: 30px;
+        padding-left: 40px;
+
+        margin-left: 60px;
+
+        font-size: 13px;
+
+        background-position: 15px 19px;
+        background-size: 20px;
+    }
+
+    #view {
+        width: 30px;
+        margin-bottom: -11px;
+    }
+
+    #button {
+        width: 300px;
+        font-size: 13px;
+    }
+
+    .custom-checkbox label {
+        margin-right: 165px;
+        font-size: 2.5rem;
+    }
+
+    .forgot{
+        margin-left: 190px;
+        margin-top: -23px;
+        margin-bottom: 30px;
+        font-size: 2.5rem;
+    }
+
+}
+
+@media (max-width: 418px) {
+    html{
+        font-size: 30%;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+   
+
+    #email {
+        width: 250px;
+        padding: 30px;
+        padding-left: 40px;
+
+        margin-left: 10px;
+        font-size: 13px;
+
+        background-position: 15px 19px;
+        background-size: 20px;
+    }
+
+    #password {
+        width: 250px;
+        padding: 30px;
+        padding-left: 40px;
+
+        margin-right: 35px;
+
+        font-size: 13px;
+
+        background-position: 15px 19px;
+        background-size: 20px;
+    }
+
+    #view {
+        width: 25px;
+        margin-bottom: -8px;
+        margin-left: -10px;
+    }
+
+    #button {
+        width: 250px;
+        font-size: 13px;
+    }
+
+    .custom-checkbox label {
+        margin-right: 165px;
+        font-size: 2.5rem;
+    }
+
+    .forgot{
+        margin-left: 190px;
+        margin-top: -23px;
+        margin-bottom: 30px;
+        font-size: 2.5rem;
+        cursor: pointer;
+    }
+
 }
